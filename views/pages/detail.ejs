@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1><%=item2.name%></h1>
+        <p><%=item2. descreption%></p>
+        <h3><%=item2. abilityscore%></h3>
+        <form method="POST" action="/delete/<%=item2.id%>?_method=DELETE">
+            <button type="submit">Delete</button>
+          </form>
+          <form method="POST" action="/update/<%=item2.id%>?_method=put">
+            <input  type="text" name="name" value="<%=item2.name%>">
+<input  type="text" name="description" value="<%=item2.descreption%>">
+<input  type="text" name="ablity" value="<%=item2.abilityscore%>">
+            <button type="submit">update</button>
+          </form>
+        
+        </body>
+</html>
+
